@@ -1,37 +1,40 @@
 # Mark-to-Market Analysis of Brazilian Government Bonds 📈
 
-This project aims to analyze the mark-to-market behavior of Brazilian Treasury bonds, identifying periods of appreciation and depreciation based on statistical quartiles. The entire data pipeline was developed in Python using Google Colab, with final visualization performed in Power BI.
+This project analyzes the historical behavior of Brazilian Treasury bonds through a mark-to-market approach. The objective is to identify appreciation and depreciation cycles using statistical quartiles. The pipeline was developed in Python (Google Colab), with a final dashboard built in Power BI.
+
+## 📊 Dashboard Preview
+
+### General Overview Page
+![Dashboard Page 1](images/Treasury_Market_Page_1.png)
+
+### Detailed Bond Analysis Page
+![Dashboard Page 2](images/Treasury_Market_Page_2.png)
 
 ## 📌 Objective
-To identify, based on historical data from the Brazilian National Treasury, periods of price increase, decline, and stability in government bonds, supporting visual and strategic analysis for investors or academic use.
+To identify cycles of price increase and decrease in government bonds based on historical market data and statistical analysis — providing visual and strategic support for investors and researchers.
 
 ## 🔧 Technologies Used
 - Python (Google Colab)
 - Pandas
 - Web Scraping (BeautifulSoup)
 - Google Sheets API
-- Power BI (final visualization)
+- Power BI (final dashboard)
 
 ## 🧱 Project Structure
-1. **Data collection**: Web scraping of public price tables from the Brazilian Treasury website  
-2. **ETL and transformation**: Data cleaning, transformation, and classification using quartile analysis  
-3. **Automated export**: Data pushed to Google Sheets  
-4. **Visualization**: Power BI dashboard with filters for bond types, maturity periods, and historical trends
-
-## 📊 Results
-- Interactive dashboard enabling historical behavior analysis of bonds  
-- Identification of periods of price fluctuation based on statistical models  
-- Fully automated pipeline with low computational cost
+1. **Data Collection**: Web scraping from the Brazilian Treasury website  
+2. **ETL and Cleaning**: Data normalization and transformation, including outlier handling and quartile classification  
+3. **Export Automation**: Processed data exported to Google Sheets  
+4. **Visualization**: Dashboard created in Power BI with filters and historical trend analysis
 
 ## 🚀 How to Run
-1. Open the notebook `ETL_Tesouro_direto_organizado.ipynb` in Google Colab  
-2. Install required libraries (`pip install wget` and `bs4`)  
-3. Authenticate your Google account to access Google Drive  
-4. Run the cells in sequence  
-5. Use the Google Sheets file as a data source in Power BI
+1. Open `ETL_Treasury_Market_Analysis_EN.ipynb` in Google Colab  
+2. Install required libraries (`pip install wget`, `bs4`, etc.)  
+3. Authenticate Google account to access Google Drive  
+4. Execute all cells in order  
+5. Use the generated Google Sheets as a data source in Power BI
 
 ## 📁 Data Source
-The data is collected directly from the official Brazilian Treasury website. Please verify the page structure before executing the scraping process.
+Data is collected from the [official Brazilian Treasury website](https://www.tesourodireto.com.br/). Before running the scraping process, check that the structure of the site has not changed.
 
 ---
 
